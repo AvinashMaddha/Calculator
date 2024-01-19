@@ -13,6 +13,7 @@ body{
     
     overflow: hidden;
     flex-wrap: wrap;
+    background-color: #263a3a;
     
 }
 .cal-buttons{
@@ -30,7 +31,7 @@ button{
     border-radius: 10px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    background-color: #aee8de;
+    background-color: #87f0de;
 }
 .cal-container{
     border-radius: 10px;
@@ -43,6 +44,7 @@ button{
    padding-bottom: 20px;
    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    margin: 10px;
+   background-color: #ffffff;
     
 }
 input{
@@ -71,20 +73,22 @@ input:focus{
     
 }
 .operator{
-    background-color: #4ff798;
+    background-color: #05fa5b;
 }
 .clear{
-    background-color: #f03c3c;
+    background-color: #f70a0a;
 }
 h1{
     font-size: 3em;
     font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
+    color: #ffffff;
 }
 @media screen and (max-width:465px){
     .cal-container{
         width: 380px;
+
     }
 }
 @media screen and (max-width:400px){
@@ -106,22 +110,26 @@ h1{
         width: 150px;
     }
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:400px){
     .cal-container{
         width: 300px;
+        padding-left: 15px;
         
     }
     .cal-buttons{
         width: 280px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
     }
     button{
         width: 50px;
     }
     .input-container{
         width: 280px;
-        justify-content: start;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
     }
     input{
-        width: 130px;
+        width: 155px;
     }
 }
